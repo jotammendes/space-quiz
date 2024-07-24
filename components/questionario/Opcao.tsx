@@ -8,7 +8,7 @@ export interface OpcaoProps {
 
 export default function Opcao(props: OpcaoProps) {
   return (
-    <Pressable style={styles.container}>
+    <Pressable style={styles.container} onPress={props.onPress}>
       <Text style={styles.texto}>{props.texto}</Text>
     </Pressable>
   );

@@ -1,11 +1,12 @@
-import PerguntaModel from "@/data/model/Pergunta";
 import { View } from "react-native";
+
+import PerguntaModel from "@/data/model/Pergunta";
 import Enunciado from "./Enunciado";
 import Opcao from "./Opcao";
 
 export interface PerguntaProps {
-  pergunta: PerguntaModel
-  opcaoSelecionada: (indice: number) => void
+  pergunta: PerguntaModel;
+  opcaoSelecionada: (indice: number) => void;
 }
 
 export default function Pergunta(props: PerguntaProps) {
